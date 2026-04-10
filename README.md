@@ -8,10 +8,13 @@ The `samples/` folder contains minimal projects used to validate IDE configurati
 # Visual Studio Code  
 > Place the `.vscode` directory at the root of the project.
 
-# i3
+# [i3](i3/README.md)  
+Configuration for the [i3 window manager](https://i3wm.org/), including i3status. See [i3/README.md](i3/README.md) for install and update instructions.  
 
-Configuration for the [i3 window manager](https://i3wm.org/), including i3status. See [i3/README.md](i3/README.md) for install and update instructions.
+# [My Vim and Neovim Setups](https://github.com/augustodamasceno/vimlink)  
 
-# Toolchain Instalations for Unix-like and Windows:  
+# [Gin Shell (GSH) - A collection of bash scripts](https://github.com/augustodamasceno/gsh)  
+
+# Toolchain Installations for Unix-like and Windows:  
 
 * ## [C++](docs/cpp.md)

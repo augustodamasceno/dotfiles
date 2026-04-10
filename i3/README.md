@@ -2,6 +2,11 @@
 
 Configuration files for [i3](https://i3wm.org/) and [i3status](https://i3wm.org/i3status/).
 
+## Screenshot  
+
+![Screenshot i3](i3.png)  
+> Wallpaper by [azzaziel1991](https://wallhaven.cc/w/6omxxl) 
+
 ## Files
 
 | File | Description |
