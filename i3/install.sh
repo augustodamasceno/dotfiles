@@ -60,10 +60,10 @@ install_deps() {
     local os
     os="$(detect_os)"
 
-    local pkgs_debian="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pulseaudio-utils pavucontrol dex xss-lock"
-    local pkgs_arch="i3-wm i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock"
-    local pkgs_fedora="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock"
-    local pkgs_freebsd="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock"
+    local pkgs_debian="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pulseaudio-utils pavucontrol dex xss-lock blueman network-manager-gnome"
+    local pkgs_arch="i3-wm i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock blueman network-manager-applet"
+    local pkgs_fedora="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock blueman network-manager-applet"
+    local pkgs_freebsd="i3 i3status rofi alacritty picom dunst feh playerctl brightnessctl scrot numlockx pavucontrol dex xss-lock blueman network-manager-applet"
 
     info "Detected OS: $os"
 

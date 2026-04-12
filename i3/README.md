@@ -25,13 +25,15 @@ Configuration files for [i3](https://i3wm.org/) and [i3status](https://i3wm.org/
 | Workspaces | 7 named workspaces (`term`, `web`, `code`, `code2`, `vm`, `files`, `stack`) with app assignments |
 | Keybindings | vim-style focus/move, audio, brightness, screenshots, display, keyboard layout |
 | Modes | `resize`, `gaps`, `system` (lock/suspend/reboot/shutdown) |
-| Autostart | picom, dunst, feh, nm-applet, polkit |
+| Autostart | picom, dunst, feh, nm-applet, blueman-applet, polkit, xrandr (HDMI-1 left of eDP-1) |
 
 #### Display & Keyboard shortcuts
 
 | Keybinding | Action |
 |---|---|
-| `Super+Shift+P` | Dual-screen setup (HDMI-1 left of eDP-1) |
+| `Super+Shift+P`       | Dual-screen setup (HDMI-1 left of eDP-1) |
+| `Super+Ctrl+P`        | Dual-screen setup (HDMI-1 above eDP-1) |
+| `Super+Ctrl+Shift+P`  | Dual-screen setup (HDMI-1 right of eDP-1) |
 | `Super+Shift+B` | Keyboard layout: Brazilian (`br`) |
 | `Super+Shift+U` | Keyboard layout: US International (`us intl`) |
 
@@ -42,34 +44,40 @@ i3 i3status rofi alacritty picom dunst feh
 playerctl brightnessctl scrot numlockx
 pulseaudio-utils (pactl)  OR  pipewire-pulse
 pavucontrol
+blueman
+network-manager-gnome (nm-applet)
 ```
 
 Install on Debian/Ubuntu:
 
 ```sh
 sudo apt install i3 i3status rofi alacritty picom dunst feh \
-    playerctl brightnessctl scrot numlockx pulseaudio-utils pavucontrol
+    playerctl brightnessctl scrot numlockx pulseaudio-utils pavucontrol \
+    blueman network-manager-gnome
 ```
 
 Install on Arch Linux:
 
 ```sh
 sudo pacman -S i3-wm i3status rofi alacritty picom dunst feh \
-    playerctl brightnessctl scrot numlockx pavucontrol
+    playerctl brightnessctl scrot numlockx pavucontrol \
+    blueman network-manager-applet
 ```
 
 Install on Fedora:
 
 ```sh
 sudo dnf install i3 i3status rofi alacritty picom dunst feh \
-    playerctl brightnessctl scrot numlockx pavucontrol
+    playerctl brightnessctl scrot numlockx pavucontrol \
+    blueman network-manager-applet
 ```
 
 Install on FreeBSD:
 
 ```sh
 sudo pkg install i3 i3status rofi alacritty picom dunst feh \
-    playerctl brightnessctl scrot numlockx pavucontrol
+    playerctl brightnessctl scrot numlockx pavucontrol \
+    blueman network-manager-applet
 ```
 
 ## Install

@@ -83,12 +83,14 @@ smart_gaps on
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $lock --nofork
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id $notifydaemon
 exec --no-startup-id picom --daemon
 exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg
 exec --no-startup-id numlockx on
 exec --no-startup-id xset r rate 300 50
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --left-of eDP-1
 
 # KEYBINDINGS — APPS
 bindsym $mod+Return       exec $terminal
@@ -116,7 +118,9 @@ bindsym $mod+shift+grave     exec --no-startup-id dunstctl close-all
 bindsym $mod+ctrl+grave      exec --no-startup-id dunstctl action
 
 # Display
-bindsym $mod+shift+p exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --left-of eDP-1
+bindsym $mod+shift+p       exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --left-of eDP-1
+bindsym $mod+ctrl+p        exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --above eDP-1
+bindsym $mod+ctrl+shift+p  exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --right-of eDP-1
 
 # Keyboard layout
 bindsym $mod+shift+b exec --no-startup-id setxkbmap br
