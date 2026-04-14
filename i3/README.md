@@ -34,6 +34,7 @@ Configuration files for [i3](https://i3wm.org/) and [i3status](https://i3wm.org/
 | `Super+Shift+P`       | Dual-screen setup (HDMI-1 left of eDP-1) |
 | `Super+Ctrl+P`        | Dual-screen setup (HDMI-1 above eDP-1) |
 | `Super+Ctrl+Shift+P`  | Dual-screen setup (HDMI-1 right of eDP-1) |
+| `Super+Shift+M`       | Single monitor (eDP-1 only, HDMI-1 off) |
 | `Super+Shift+B` | Keyboard layout: Brazilian (`br`) |
 | `Super+Shift+U` | Keyboard layout: US International (`us intl`) |
 

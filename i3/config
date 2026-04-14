@@ -121,6 +121,7 @@ bindsym $mod+ctrl+grave      exec --no-startup-id dunstctl action
 bindsym $mod+shift+p       exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --left-of eDP-1
 bindsym $mod+ctrl+p        exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --above eDP-1
 bindsym $mod+ctrl+shift+p  exec --no-startup-id xrandr --output eDP-1 --auto --primary --output HDMI-1 --auto --right-of eDP-1
+bindsym $mod+shift+m       exec --no-startup-id xrandr --output HDMI-1 --off --output eDP-1 --auto
 
 # Keyboard layout
 bindsym $mod+shift+b exec --no-startup-id setxkbmap br
