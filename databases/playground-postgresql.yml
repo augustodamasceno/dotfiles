@@ -1,0 +1,26 @@
+services:
+  pg-playground:
+    image: postgres:latest
+    container_name: playground_postgresql
+    environment:
+      POSTGRES_USER: playground
+      POSTGRES_PASSWORD: playground
+      POSTGRES_DB: playground
+    ports:
+      - "65001:5432"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    storage_opt:
+      size: 2G 
+
+volumes:
+  pg_data:
+    driver: local

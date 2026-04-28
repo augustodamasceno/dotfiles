@@ -1,0 +1,23 @@
+services:
+  redis-playground:
+    image: redis:latest
+    container_name: playground_redis
+    command: redis-server --requirepass playground
+    ports:
+      - "65003:6379"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    volumes:
+      - redis_data:/data
+    storage_opt:
+      size: 1G
+
+volumes:
+  redis_data:
+    driver: local
