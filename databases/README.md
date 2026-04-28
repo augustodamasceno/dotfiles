@@ -131,8 +131,8 @@ docker ps
 
 You should see:
 ```
-NAME                   COMMAND                  SERVICE        STATUS      PORTS
-playground_postgresql  "docker-entrypoint…"     pg-playground  Up ...      0.0.0.0:65001->5432/tcp
+CONTAINER ID   IMAGE             COMMAND                  CREATED         STATUS         PORTS                                           NAMES
+c0742fdbdb73   postgres:latest   "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   0.0.0.0:65001->5432/tcp, [::]:65001->5432/tcp   playground_postgresql
 ```
 
 #### Step 3: Connect Using Terminal (psql)
@@ -190,10 +190,10 @@ For a visual interface, use DBeaver:
 ### Common Terminal Commands
 
 ```bash
-# Start the service (run from databases directory)
+# Start the service  
 docker-compose -f playground-postgresql.yml up -d
 
-# Stop the service
+# Stop the service  
 docker-compose -f playground-postgresql.yml down
 
 # View logs in real-time
@@ -211,7 +211,7 @@ docker-compose -f playground-postgresql.yml exec pg-playground pg_dump -U playgr
 # Restore from backup
 cat backup.sql | docker-compose -f playground-postgresql.yml exec -T pg-playground psql -U playground -d playground
 
-# Remove service and delete all data (WARNING: Permanent)
+# Remove service and delete all data  
 docker-compose -f playground-postgresql.yml down -v
 
 # View container resource usage
@@ -269,10 +269,10 @@ jdbc:postgresql://localhost:65001/playground?user=playground&password=playground
 When you're done with the playground environment:
 
 ```bash
-# Stop the service (preserves data)
+# Stop the service (preserves data)  
 docker-compose -f playground-postgresql.yml down
 
-# Stop and remove all data (WARNING: cannot be recovered)
+# Stop and remove all data  
 docker-compose -f playground-postgresql.yml down -v
 ```
 
