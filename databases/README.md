@@ -126,7 +126,7 @@ Creating playground_postgresql ... done
 Check if the container is running:
 
 ```bash
-docker-compose -f playground-postgresql.yml ps
+docker ps
 ```
 
 You should see:
