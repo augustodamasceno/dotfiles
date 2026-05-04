@@ -4,7 +4,7 @@
 ## Contact
 - email: augustodamasceno@protonmail.com
 
-## 1. Global Standards (Apply to All Languages)
+## 1. Global Standards and Doc Templates
 
 ### Copyright Headers
 **Rule:** Insert the following header at the very top of every new file.
@@ -41,6 +41,58 @@
 - **Indentation:** STRICTLY 4 spaces. No tabs.
 - **Idempotency:** Ensure functions are pure where possible. Retries must not duplicate side effects. Handle errors gracefully.
 
+### Use this template for main READMEs
+
+```md
+<div align="center">
+
+# **<PROJECT-NAME>**
+
+*<PROJECT-DESCRIPTION>*
+
+<p>
+  <a href="#"><img alt="License" src="https://img.shields.io/badge/License-BSD_2--Clause-orange.svg"></a>
+</p>
+
+</div>
+
+---
+
+## **Contact**
+
+* **Email:** [augustodamasceno@protonmail.com](mailto:augustodamasceno@protonmail.com)
+
+---
+
+## **License**
+
+This project is licensed under the BSD 2-Clause License.
+
+<small>Copyright &copy; <YEAR>, Augusto Damasceno. All rights reserved.</small>
+
+---
+
+```
+
+### Use this template for Jupyter  
+
+```md
+<center><h1>TITLE</h1></center>
+<center><i>Description</i></center>
+
+---
+
+**Author:** Augusto Damasceno
+**Project Link:** [github.com/augustodamasceno/](https://github.com/augustodamasceno/)
+**Last Updated:** DATE
+
+---
+
+<div style="text-align: right;">
+<small>Copyright © YEAR, Augusto Damasceno</small><br>
+<small>SPDX-License-Identifier: <code>BSD-2-Clause</code></small>
+</div>
+```
 ---
 
 ## 2. Language Rules: C / C++
