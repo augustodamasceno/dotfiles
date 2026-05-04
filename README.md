@@ -3,7 +3,7 @@ Dot Files
 
 # 1. Toolchain Installations for Unix-like and Windows:  
 
-* ## 1.1 [C++](docs/cpp.md)
+* ## 1.1 [C++](toolchains/cpp.md)
 
 # 2. Visual Studio Code  
 > Place the `.vscode` directory at the root of the project.
