@@ -1,19 +1,19 @@
 # Large Language Models Instructions and Prompts
 
-## 1. Coding Style for LLMs
-Rename or copy [instructions.md](instructions.md) to the path required by each tool:
+## 1. Code Generation  
+Put [instructions.md](instructions.md) and [project-instructions.md](project-instructions.md) in the root of the project.
+
+Copy [core.md](core.md) to the following files depending on the tool.
 
 | Tool | File Path |
 | :--- | :--- |
 | **Copilot** | `.github/copilot-instructions.md` |
-| **Cursor** | `.cursor/rules/` |
+| **Cursor** | `.cursor/rules/project.mdc` |
 | **General** | `AGENTS.md` |
 
-## 2. Project-Specific Instructions Template
+## 2. Prompts  
 
-Copy [project-instructions-template.md](project-instructions-template.md) into the project root, fill in the placeholders, and save it to the path required by each tool (see §1).
-
-## 3. Daily News
+### 2.1 Daily News
 
 - This prompt has a daily frequency.
 - For each news item, provide a heading, a brief paragraph summary, and a source link.
