@@ -2,7 +2,6 @@
 
 Copyright (c) 2026, Augusto Damasceno. All rights reserved.  
 SPDX-License-Identifier: BSD-2-Clause
-
 ---
 
 ## Overview
@@ -94,6 +93,10 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake -B build -DTEMPLATE_BUILD_TESTS=OFF
 cmake -B build -DTEMPLATE_WARNINGS_AS_ERRORS=ON
 cmake --build build
+
+# Build a specific target
+cmake --build build --target template_app
+cmake --build build --target test_core
 ```
 
 ```powershell
