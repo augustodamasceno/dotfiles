@@ -1,34 +1,41 @@
-# dotfiles  
-Dot Files  
+<div align="center">
 
-# 1. Toolchain Installations for Unix-like and Windows:  
+# **dotfiles**
 
-* ## 1.1 [C++](toolchains/cpp.md)
+*C++ toolchains, CMake templates, VS Code settings, LLM prompts, Vim/Neovim setups, database playgrounds, i3 configuration, and shell scripts.*
 
-# 2. Visual Studio Code  
-> Place the `.vscode` directory at the root of the project.
+<p>
+  <a href="#"><img alt="License" src="https://img.shields.io/badge/License-BSD_2--Clause-orange.svg"></a>
+</p>
 
-# 3. Samples  
+</div>
 
-The `samples/` folder contains minimal projects used to validate IDE configuration for compile, run, debug, and testing workflows. Each sample is self-contained and intended to verify that toolchain and editor settings are working correctly.
+---
 
-# 4. [Large Language Models Instructions and Prompts](llm/README.md)
+## **Contact**
 
+* **Email:** [augustodamasceno@protonmail.com](mailto:augustodamasceno@protonmail.com)
 
-# 5. [My Vim and Neovim Setups](https://github.com/augustodamasceno/vimlink)  
+---
 
-# 6. [Gin Shell (GSH) - A collection of bash scripts](https://github.com/augustodamasceno/gsh)  
+## **License**
 
+This project is licensed under the BSD 2-Clause License.
 
-# 7. [Databases Playground](databases/README.md)  
-Pre-configured Docker Compose environments for quick database setup during development and testing. Includes:
+<small>Copyright &copy; 2026, Augusto Damasceno. All rights reserved.</small>
 
-- **PostgreSQL** (Port 65001) - Relational database for structured data
-- **MongoDB** (Port 65002) - NoSQL document database for flexible schemas
-- **Redis** (Port 65003) - In-memory cache and data store for high-speed operations
+---
 
-All databases use the same credentials (`playground`/`playground`) for easy access. See [databases/README.md](databases/README.md) for detailed setup, connection instructions, and usage examples for terminal, DBeaver, and application code.
+# Table of Contents
 
-
-# 8. [i3](i3/README.md)   
-Configuration for the [i3 window manager](https://i3wm.org/), including i3status. See [i3/README.md](i3/README.md) for install and update instructions.  
+| Name | Link | Description |
+|------|------|-------------|
+| C++ Toolchains | [toolchains/cpp.md](toolchains/cpp.md) | Toolchain installation guides for Unix-like systems and Windows |
+| CMake Templates | [cmake/README.md](cmake/README.md) | C++17 project template with LibTorch, GoogleTest, and CTest integration |
+| Visual Studio Code | [vscode/](vscode/) | VS Code settings — place the `.vscode` directory at the root of your project |
+| Samples | [samples/](samples/) | Minimal projects to validate IDE compile, run, debug, and test workflows |
+| LLM Instructions | [llm/README.md](llm/README.md) | Large language model instructions and prompt templates |
+| Vim / Neovim | [github.com/augustodamasceno/vimlink](https://github.com/augustodamasceno/vimlink) | Vim and Neovim setup and configuration |
+| GSH | [github.com/augustodamasceno/gsh](https://github.com/augustodamasceno/gsh) | Gin Shell — a collection of bash utility scripts |
+| Databases Playground | [databases/README.md](databases/README.md) | Docker Compose environments for PostgreSQL, MongoDB, and Redis |
+| i3 | [i3/README.md](i3/README.md) | i3 window manager configuration |

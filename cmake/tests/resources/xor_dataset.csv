@@ -1,0 +1,6 @@
+# XOR dataset
+# format: input1,input2,expected
+0.0,0.0,0.0
+0.0,1.0,1.0
+1.0,0.0,1.0
+1.0,1.0,0.0
