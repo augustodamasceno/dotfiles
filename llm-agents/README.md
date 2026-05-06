@@ -1,6 +1,6 @@
-# Large Language Models Instructions and Prompts
+# Large Language Models and Agents Instructions and Prompts
 
-## 1. Code Generation
+## 1. Agentic Code Generation
 
   * ### 1.1 Put the required base files in the root of the project.
 
