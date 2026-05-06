@@ -1,0 +1,21 @@
+[
+  {
+    "name": "GCC",
+    "compilers": {
+      "C": "/usr/bin/gcc",
+      "CXX": "/usr/bin/g++"
+    },
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "environmentVariables": {
+      "CFLAGS": "-march=native -mtune=native",
+      "CXXFLAGS": "-march=native -mtune=native"
+    },
+    "cmakeSettings": {
+      "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+      "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+      "CMAKE_CXX_COMPILER_LAUNCHER": "ccache"
+    }
+  }
+]

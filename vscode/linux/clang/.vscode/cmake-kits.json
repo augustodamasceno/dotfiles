@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Clang",
+    "compilers": {
+      "C": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++"
+    },
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "environmentVariables": {
+      "CFLAGS": "-march=native -mtune=native",
+      "CXXFLAGS": "-march=native -mtune=native"
+    },
+    "cmakeSettings": {
+      "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+      "CMAKE_C_COMPILER_LAUNCHER": "ccache",
+      "CMAKE_CXX_COMPILER_LAUNCHER": "ccache"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.buildType": "RelWithDebInfo",
+    "cmake.generator": "Ninja",
+    "cmake.cmakePath": "cmake",
+    "cmake.configureArgs": [
+        "-DBUILD_TESTING=ON",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+    ],
+    "cmake.environment": {},
+    "cmake.sourceDirectory": "${workspaceFolder}/CMakeLists.txt"
+}

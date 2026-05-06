@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(msvc) Launch Project",
+            "type": "cppvsdbg",
+            "request": "launch",
+            // Dynamically finds the executable produced by CMake
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "CMake: build"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Visual Studio 2026 Release - amd64",
+    "visualStudio": "VisualStudio.18.Release",
+    "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "cmakeSettings": {
+      "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+    }
+  }
+]
