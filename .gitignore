@@ -1,3 +1,6 @@
 build/
 cmake/Testing/
 samples/.vscode/
+doc/cpp/xml/
+doc/cpp/site/
+.venv/

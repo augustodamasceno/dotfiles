@@ -1,0 +1,42 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'include/**'
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'Doxyfile'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Install MkDocs, the Material theme, and the mkdoxy plugin
+      - name: Install Python Dependencies
+        run: pip install mkdocs-material mkdoxy
+
+      # Run Doxygen to generate the XML
+      - name: Run Doxygen (Extract XML)
+        run: doxygen Doxyfile
+
+      # mkdoxy handles the XML parsing and site generation automatically
+      - name: Deploy MkDocs to GitHub Pages
+        run: mkdocs gh-deploy --force

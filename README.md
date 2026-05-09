@@ -30,7 +30,8 @@ This project is licensed under the BSD 2-Clause License.
 
 | Name | Link | Description |
 |------|------|-------------|
-| C++ Toolchains | [toolchains/cpp.md](toolchains/cpp.md) | Toolchain installation guides for Unix-like systems and Windows |
+| C++ Toolchains | [toolchains/cpp.md](toolchains/cpp.md) | Toolchain installation guides for Unix-like systems and Windows |  
+| C++ Documentation CI/CD | doc/cpp/README.md | Documentation Pipeline CI/CD |
 | CMake Templates | [cmake/README.md](cmake/README.md) | C++17 project template with LibTorch, GoogleTest, and CTest integration |
 | Visual Studio Code | [vscode/](vscode/) | VS Code settings — place the `.vscode` directory at the root of your project |
 | Samples | [samples/](samples/) | Minimal projects to validate IDE compile, run, debug, and test workflows |
