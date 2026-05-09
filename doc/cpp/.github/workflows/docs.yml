@@ -8,7 +8,6 @@ on:
       - 'include/**'
       - 'docs/**'
       - 'mkdocs.yml'
-      - 'Doxyfile'
 
 permissions:
   contents: write
@@ -33,10 +32,6 @@ jobs:
       - name: Install Python Dependencies
         run: pip install mkdocs-material mkdoxy
 
-      # Run Doxygen to generate the XML
-      - name: Run Doxygen (Extract XML)
-        run: doxygen Doxyfile
-
-      # mkdoxy handles the XML parsing and site generation automatically
+      # mkdoxy calls Doxygen internally during site generation
       - name: Deploy MkDocs to GitHub Pages
         run: mkdocs gh-deploy --force

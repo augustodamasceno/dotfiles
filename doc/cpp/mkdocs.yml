@@ -44,7 +44,6 @@ nav:
 plugins:
   - search
   - mkdoxy:
-      doxygen-bin-path: "C:\\Program Files\\doxygen\\bin\\doxygen.exe"
       projects:
         example:
           src-dirs: "include/"
