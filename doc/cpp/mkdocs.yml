@@ -44,6 +44,10 @@ nav:
 plugins:
   - search
   - mkdoxy:
+      # doxygen-bin-path: Windows default install path.
+      # Replace with the correct path for your OS:
+      #   Linux / FreeBSD : /usr/bin/doxygen
+      #   macOS (Homebrew): /opt/homebrew/bin/doxygen
       doxygen-bin-path: "C:\\Program Files\\doxygen\\bin\\doxygen.exe"
       projects:
         example:

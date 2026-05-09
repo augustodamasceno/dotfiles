@@ -82,11 +82,17 @@ pip install mkdocs-material mkdoxy
 
 ### mkdocs.yml with Frontend Material Theme and mkdoxy Plugin: [`mkdocs.yml`](mkdocs.yml) 
 
-The `mkdoxy` is the section `plugins` in `mkdocs.yml`:
+The `mkdoxy` plugin is configured under `plugins` in `mkdocs.yml`:
 
 ```yaml
 plugins:
   - mkdoxy:
+      # Set doxygen-bin-path to the Doxygen binary location for your OS.
+      # Replace with the correct path:
+      #   Windows        : C:\Program Files\doxygen\bin\doxygen.exe
+      #   Linux / FreeBSD: /usr/bin/doxygen
+      #   macOS (Homebrew): /opt/homebrew/bin/doxygen
+      doxygen-bin-path: "C:\\Program Files\\doxygen\\bin\\doxygen.exe"
       projects:
         myProject:
           src-dirs: include/
