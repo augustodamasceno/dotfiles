@@ -28,9 +28,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Install MkDocs, the Material theme, and the mkdoxy plugin
+      # Install MkDocs, the Material theme, mkdoxy, and mkdocs-llmstxt
       - name: Install Python Dependencies
-        run: pip install mkdocs-material mkdoxy
+        run: pip install mkdocs-material mkdoxy mkdocs-llmstxt
 
       # Replace Windows doxygen path with the Linux binary path
       - name: Set Doxygen path for Linux

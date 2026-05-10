@@ -1,0 +1,15 @@
+# MkDocs build output — rebuilt on every deploy, never commit
+site/
+
+# Python virtual environment
+.venv/
+
+# mkdoxy build artefacts written alongside the generated .md files.
+# These are regenerated on every build and contain machine-local paths.
+docs/*/hashChanges.yaml
+docs/*/xml/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

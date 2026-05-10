@@ -1,6 +1,7 @@
 build/
 cmake/Testing/
 samples/.vscode/
-doc/cpp/xml/
+doc/cpp/docs/example/xml/
+doc/cpp/docs/example/hashChanges.yaml
 doc/cpp/site/
 .venv/
