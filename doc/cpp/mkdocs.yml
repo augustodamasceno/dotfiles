@@ -88,11 +88,11 @@ plugins:
           - example/modules.md
           - example/pages.md
   - mkdoxy:
-      # doxygen-bin-path: Windows default install path.
-      # Replace with the correct path for your OS:
+      # doxygen-bin-path: set for your OS:
       #   Linux / FreeBSD : /usr/bin/doxygen
       #   macOS (Homebrew): /opt/homebrew/bin/doxygen
-      doxygen-bin-path: "C:\\Program Files\\doxygen\\bin\\doxygen.exe"
+      #   Windows         : "C:\\Program Files\\doxygen\\bin\\doxygen.exe"
+      doxygen-bin-path: /usr/bin/doxygen
       # save-api: persist generated .md files to this directory after build.
       # Without this, markdown is written inside site/ and lost on the next build.
       save-api: "docs/"

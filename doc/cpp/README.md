@@ -186,14 +186,15 @@ every push to `main` that touches `include/`, `docs/`, or `mkdocs.yml`.
 3. Installs `mkdocs-material`, `mkdoxy`, and `mkdocs-llmstxt`.
 4. Patches the `doxygen-bin-path` in `mkdocs.yml` to the Linux binary path
    (the file stores the Windows path for local development).
-5. Runs `mkdocs gh-deploy --force`, which builds the site and force-pushes it
-   to the `gh-pages` branch.
+5. Builds the site with `mkdocs build` and uploads the `site/` directory as a
+   Pages artifact.
+6. A separate `deploy` job deploys the artifact to GitHub Pages via the
+   official `actions/deploy-pages` action.
 
 ### One-time setup
 
 1. In your GitHub repository go to **Settings → Pages**.
-2. Set **Source** to `Deploy from a branch` and select the `gh-pages` branch,
-   `/` (root).
+2. Set **Source** to `GitHub Actions`.
 3. Update `site_url` in `mkdocs.yml` to your Pages URL
    (e.g. `https://<user>.github.io/<repo>/`).
 4. Commit and push — the workflow handles everything else.
