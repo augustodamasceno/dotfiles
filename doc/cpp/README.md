@@ -46,6 +46,32 @@ graph TD
 
 ## Installation
 
+### uv (recommended — all platforms)
+
+The project ships with [`pyproject.toml`](pyproject.toml) and
+[`requirements.txt`](requirements.txt) so you can use
+[uv](https://docs.astral.sh/uv/) for fast, reproducible installs.
+
+```bash
+# Install uv (once)
+pip install uv          # or: curl -Ls https://astral.sh/uv/install.sh | sh
+
+# Create a virtual environment and install all dependencies
+uv sync                 # reads pyproject.toml, creates .venv/
+
+# Or install from requirements.txt into the active environment
+uv pip install -r requirements.txt
+```
+
+After `uv sync` all MkDocs commands run inside the managed venv:
+
+```bash
+uv run mkdocs build
+uv run mkdocs serve
+```
+
+---
+
 ### Linux (Ubuntu/Debian)
 ```bash
 # 1. Install Doxygen and Python
