@@ -2,7 +2,7 @@
 
 # **dotfiles**
 
-*C++ toolchains, CMake templates, VS Code settings, LLM prompts, Vim/Neovim setups, database playgrounds, i3 configuration, and shell scripts.*
+*C++, doc pipeline, CMake, VS Code, LLM and agents, Vim/Neovim, database, i3, and shell.*
 
 <p>
   <a href="#"><img alt="License" src="https://img.shields.io/badge/License-BSD_2--Clause-orange.svg"></a>
