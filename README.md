@@ -12,7 +12,7 @@
 
 ---
 
-> **Note:** This is a very basic example. To explore more powerful AI workflows, send me an email for business contact.
+> **Note:** llm-agents is a very basic example. To explore more powerful AI workflows, send me an email for business contact.
 
 ## **Contact**
 
