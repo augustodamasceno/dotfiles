@@ -1,5 +1,7 @@
 # Large Language Models and Agents Instructions and Prompts
 
+> **Note:** This is a very basic example. To explore more powerful AI workflows, send me an email for business contact.
+
 ## 1. Agentic Code Generation
 
   * ### 1.1 Put the required base files in the root of the project.

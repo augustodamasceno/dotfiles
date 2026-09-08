@@ -12,6 +12,8 @@
 
 ---
 
+> **Note:** This is a very basic example. To explore more powerful AI workflows, send me an email for business contact.
+
 ## **Contact**
 
 * **Email:** [augustodamasceno@protonmail.com](mailto:augustodamasceno@protonmail.com)
